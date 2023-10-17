@@ -22,15 +22,15 @@ export default function RootLayout({
   return (
     <html lang="en" className="light" style={{ colorScheme: "light" }}>
       <body className={`${nunito.className} body`}>
-        <Suspense fallback={<Loading />}>
-          <CountriesProvider>
+        <CountriesProvider>
+          <Suspense fallback={<Loading />}>
             <DarkThemeProvider>
               <Header />
 
               {children}
             </DarkThemeProvider>
-          </CountriesProvider>
-        </Suspense>
+          </Suspense>
+        </CountriesProvider>
       </body>
     </html>
   );
