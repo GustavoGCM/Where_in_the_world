@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .body {
+    @apply bg-gray-100 dark:bg-gray-900;
+  }
+
+  .logo {
+    @apply text-lg md:text-xl text-gray-950 dark:text-white font-bold;
+  }
+
+  .dark-mode-btn {
+    @apply bg-transparent text-gray-950 dark:text-white text-base py-2.5 flex items-center gap-2
+    hover:scale-110 duration-100;
+  }
+
+  .main-input {
+    @apply py-4 pl-14 outline-none border-none rounded drop-shadow-md w-full focus:ring-gray-200
+    text-base dark:text-white dark:bg-gray-800 dark:focus:ring-gray-700 dark:placeholder-gray-300;
+  }
+
+  .default-icon {
+    @apply fill-gray-500 dark:fill-gray-300;
+  }
+
+  .icon-1 {
+    @apply fill-gray-800 dark:fill-gray-300;
+  }
+
+  .select-icon {
+    @apply flex items-center gap-8 drop-shadow-md py-4 text-base px-5 bg-white outline-none dark:bg-gray-800 dark:text-gray-300 w-fit;
+  }
+
+  .title-1 {
+    @apply text-gray-950 text-2xl dark:text-gray-300 font-bold tracking-wide;
+  }
+
+  .title-3 {
+    @apply text-gray-950 text-xl dark:text-gray-300 font-bold tracking-wide;
+  }
+
+  .text-1 {
+    @apply text-gray-950 text-sm dark:text-gray-300;
+  }
+
+  .in-line {
+    @apply flex gap-1 whitespace-nowrap;
+  }
+
+  .error-title {
+    @apply text-center col-span-full text-xl mt-11 font-bold text-gray-600 dark:text-gray-300;
+  }
+
+  .border-countries {
+    @apply bg-white py-1 px-4 text-sm drop-shadow-md dark:bg-gray-800 dark:text-gray-300 whitespace-nowrap text-center rounded;
+  }
+}
